@@ -1,5 +1,7 @@
 # Docker Installation 
 
+### 1. Set up Docker's Apt repository.
+
 
 ```shell
 # Add Docker's official GPG key:
@@ -16,5 +18,17 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
 
-
 ```
+
+### 2. Install the Docker packages.
+
+Latest 
+`sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
+
+### 3.  Verify that the Docker Engine installation is successful by running the hello-world image.
+
+`sudo docker run hello-world`
+
+
+
+
