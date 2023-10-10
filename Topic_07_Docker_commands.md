@@ -4,7 +4,7 @@
 ```sh
 docker version
 ```
-### adding a user to the docker group allows that user to run Docker commands without needing to use sudo we use -a mean append -G mean Group
+adding a user to the docker group allows that user to run Docker commands without needing to use sudo we use -a mean append -G mean Group
 ```sh
 sudo usermod -aG docker $USER
 ```
