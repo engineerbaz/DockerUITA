@@ -51,7 +51,7 @@ docker logs mycontainer #mycontainer is container name
 ```
 
 ## Delete All Stopped Docker Containers 
-### Use -f option to nuke the running containers too. 
+### Use -f option to the running containers too. 
 ```sh
 docker rm $(docker ps -a -q) 
 ```
