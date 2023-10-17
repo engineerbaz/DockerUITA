@@ -50,7 +50,7 @@ docker run -d -p 3000:3000 myimage       #myimage is image name
 ```            
 ### OR we can attach container name 
 
-** docker run -d -p 3000:3000 --name container-name image-name ** 
+- docker run -d -p 3000:3000 --name container-name image-name 
 
 ```sh
 docker run -d -p 3000:3000 --name mycontainer myimage               # mycontainer is container name, myimage is image name 
