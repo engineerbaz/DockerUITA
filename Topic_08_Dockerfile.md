@@ -35,15 +35,15 @@ CMD ["node", "app.js"]
 
 ### Build Dockerfile image we use -t flag -t = terminal
 
-#### docker build -t image-name . 
+docker build -t image-name . 
 
-### myimage is image name
 ```sh
 docker build -t myimage .
 ```
 
 ### Run Docker container:- Now we can run a container build Dockerfile image and attach port 3000 -p = port and use -d flag -d mean deattach 
-#### docker run -d -p 3000:3000 image-name 
+
+docker run -d -p 3000:3000 image-name 
 
 ```sh
 docker run -d -p 3000:3000 myimage       #myimage is image name
@@ -51,9 +51,8 @@ docker run -d -p 3000:3000 myimage       #myimage is image name
             OR
             
 ### OR we can attach container name 
-#### docker run -d -p 3000:3000 --name container-name image-name 
 
-### mycontainer is container name
+docker run -d -p 3000:3000 --name container-name image-name 
 
 ```sh
 docker run -d -p 3000:3000 --name mycontainer myimage               # mycontainer is container name, myimage is image name 
