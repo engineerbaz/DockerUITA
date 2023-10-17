@@ -41,15 +41,13 @@ docker build -t image-name .
 docker build -t myimage .
 ```
 
-### Run Docker container:- Now we can run a container build Dockerfile image and attach port 3000 -p = port and use -d flag -d mean deattach 
+#### Run Docker container:- Now we can run a container build Dockerfile image and attach port 3000 -p = port and use -d flag -d mean deattach 
 
 docker run -d -p 3000:3000 image-name 
 
 ```sh
 docker run -d -p 3000:3000 myimage       #myimage is image name
-```
-            OR
-            
+```            
 ### OR we can attach container name 
 
 docker run -d -p 3000:3000 --name container-name image-name 
