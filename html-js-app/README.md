@@ -22,7 +22,7 @@ git clone https://github.com/engineerbaz/DockerUITA.git
 ```
 ls
 ```
-```
+
 
 
 ### Make sure you are in html-js-app folder on your system
