@@ -30,8 +30,8 @@ root@DevOps:~# docker run -d -v myvolume:/data --name vol-container nginx
 root@DevOps:~# docker volume inspect myvolume
 ```
 #### Output
+```sh
 root@DevOps:~# docker volume inspect myvolume
-
 [
     {
         "CreatedAt": "2023-10-26T12:51:05+05:00",
@@ -44,6 +44,7 @@ root@DevOps:~# docker volume inspect myvolume
     }
 ]
 root@DevOps:~# 
+```
 
 #### stop and remove container
 ```sh
@@ -72,6 +73,7 @@ root@DevOps:~# docker run -d -v /root/volume.txt:/etc/nginx/config.txt --name bi
 root@DevOps:~# docker inspect bind-mount-container
 ```
 here are some like this Output
+```sh
 "Mounts": [
             {
                 "Type": "bind",
@@ -82,6 +84,8 @@ here are some like this Output
                 "Propagation": "rprivate"
             }
         ],
+
+```
 
 #### only mount details of container command we use grep command and use -A flag mean all and 10 lines
 ```sh
