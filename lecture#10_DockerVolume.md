@@ -16,9 +16,11 @@ root@DevOps:~# docker volume ls
 ```
 
 #### OUtput
+```sh
 root@DevOps:~# docker volume ls
 local     myvolume
 root@DevOps:~#
+```
 
 #### Now We runs an Nginx container and mounts the myvolume volume to the /data directory in the container
 ```sh
