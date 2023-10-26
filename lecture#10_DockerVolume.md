@@ -90,7 +90,7 @@ root@DevOps:~# docker inspect bind-mount-container | grep -A 10 "Mounts"
 #### Output
 root@DevOps:~# docker inspect bind-mount-container | grep -A 10 "Mounts" 
 here are some like this Output
-"Mounts": [
+    "Mounts": [
             {
                 "Type": "bind",
                 "Source": "/root/volume.txt",
@@ -101,6 +101,7 @@ here are some like this Output
             }
         ],
         "Config": {
+
 root@DevOps:~# 
 
 #### stop and delete/remove container
