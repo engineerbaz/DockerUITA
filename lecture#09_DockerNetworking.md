@@ -1,6 +1,6 @@
 # Docker Networking:
 Docker networking is a powerful feature that facilitates communication between containers and external systems 
-while providing flexibility and isolation and allows containers to communicate with each other and the outside world. \
+while providing flexibility and isolation and allows containers to communicate with each other and the outside world. 
 
 ### lets We'll cover docker networking types the default bridge network, host network, and a custom user-defined bridge network.
 ### 1) Default Bridge Network
@@ -22,7 +22,7 @@ root@DevOps:~# docker inspect -f '{{ .HostConfig.NetworkMode }}' webserver1
 ### OUtput
 default
 
-### delete container 
+### stop and delete container 
 ```sh
 root@DevOps:~# docker rm webserver1
 ```
@@ -43,7 +43,7 @@ root@DevOps:~# docker inspect -f '{{ .HostConfig.NetworkMode }}' webserver2
 ### OUtput
 host
 
-### delete container 
+### stop and delete container 
 ```sh
 root@DevOps:~# docker rm webserver2
 ```
@@ -53,7 +53,7 @@ root@DevOps:~# docker rm webserver2
 
 ### Create custom bridge network
 ```sh
-docker network create mynetwork
+root@DevOps:~# docker network create mynetwork
 ```
 
 ### Run container used the Host network attach --network=network-name
@@ -70,9 +70,13 @@ root@DevOps:~# docker inspect -f '{{ .HostConfig.NetworkMode }}' webserver3
 ### OUtput
 mynetwork
 
-### delete container 
+### Stop and delete container 
 ```sh
 root@DevOps:~# docker rm webserver3
+```
+### delete network command 
+```sh
+root@DevOps:~# docker network rm mynetwork
 ```
 
 Now We explore different Docker networking types. 
