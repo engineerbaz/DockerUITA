@@ -94,6 +94,7 @@ here are some like this Output
 root@DevOps:~# docker inspect bind-mount-container | grep -A 10 "Mounts" 
 ```
 #### Output
+```sh
 root@DevOps:~# docker inspect bind-mount-container | grep -A 10 "Mounts" 
 here are some like this Output
     "Mounts": [
@@ -109,6 +110,7 @@ here are some like this Output
         "Config": {
 
 root@DevOps:~# 
+```
 
 #### stop and delete/remove container
 ```sh
