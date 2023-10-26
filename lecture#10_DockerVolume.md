@@ -89,7 +89,8 @@ root@DevOps:~# docker inspect bind-mount-container | grep -A 10 "Mounts"
 ```
 #### Output
 root@DevOps:~# docker inspect bind-mount-container | grep -A 10 "Mounts" 
- check Output       "Mounts": [
+here are some like this Output
+"Mounts": [
             {
                 "Type": "bind",
                 "Source": "/root/volume.txt",
